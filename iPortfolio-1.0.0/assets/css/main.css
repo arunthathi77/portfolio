@@ -158,10 +158,18 @@ h6 {
 }
 
 .header .profile-img img {
-  margin: 15px auto;
-  display: block;
   width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+
+  /* Remove thick ugly border */
+  border: 3px solid #020d13;
+
+  /* Add soft glow instead */
+  box-shadow: 0 0 15px rgba(20, 157, 221, 0);
 }
 
 .header .logo {

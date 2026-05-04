@@ -629,33 +629,29 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
+  align-items: flex-start;
 }
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 8px;
   color: var(--accent-color);
-  line-height: 0;
+  margin-top: 3px;
+  min-width: 20px;
 }
 
+.about .content ul strong {
+  min-width: 110px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.about .content ul span {
+  flex: 1;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
